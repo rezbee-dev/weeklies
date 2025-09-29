@@ -16,4 +16,4 @@
   - Add feature to allow clients to update menu items & prices in a user friendly way
 
   ## Things learned
-  _to be filled in after challenge completed_
+  _to be filled in after challenge completed_so 
