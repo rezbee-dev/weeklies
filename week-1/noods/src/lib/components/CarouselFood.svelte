@@ -1,3 +1,4 @@
+<!-- Src: https://www.youtube.com/watch?v=9HcxHDS2w1s (Web Dev Simplified) -->
 <script lang="ts">
     import CrabrangoonImg from "$lib/assets/crabrangoon.jpg"
     import ShrimprollImg from "$lib/assets/shrimproll.jpg"
@@ -6,16 +7,46 @@
 
     let carouselImgs: HTMLUListElement;
 
-    function onclick(){
-        const items = carouselImgs.children
-        console.log("ive been clicked!")
-        console.log(items)
+    function onclick(direction: string){
+        const children = carouselImgs.children
+        // convert to items (HTMLCollection) to array
+        const childrenArr = [...children]
+
+        // get index of active
+        let active = carouselImgs.querySelector("[data-active]")
+
+        if(!active){
+            console.log("Error, [data-active] not found!")
+            return
+        }
+
+        let indexActive = childrenArr.indexOf(active)
+        
+
+        if(direction === "left"){
+            if(indexActive === 0) {
+                indexActive = childrenArr.length-1
+            } else {
+                indexActive -= 1
+            }
+        } else {
+            if(indexActive === childrenArr.length-1) {
+                indexActive = 0
+            } else {
+                indexActive += 1
+            }
+        }
+
+        active.removeAttribute("data-active")
+        // set new active image
+        active = childrenArr[indexActive]
+        active.setAttribute("data-active", "")
     }
 </script>
 
-<div class="carousel">
-    <button class="carousel-btn-left" {onclick}>&#10092;</button>
-    <button onclick={() => console.log("hellow workd")} class="carousel-btn-right">&#10093;</button>
+<div class="carousel" aria-label="Pictures of meals">
+    <button onclick={() => onclick("left")} class="carousel-btn-left" >&#10092;</button>
+    <button onclick={() => onclick("right")} class="carousel-btn-right">&#10093;</button>
     <ul bind:this={carouselImgs} class="carousel-imgs">
         <li class="carousel-img" data-active><img src={CrabrangoonImg} alt="Crab Rangoon"></li>
         <li class="carousel-img"><img src={ShrimprollImg} alt="Shrimp Roll"></li>
@@ -29,7 +60,7 @@
         height: 500px;
         width: 80%;
         max-width: 1000px;
-        margin: 2rem auto;
+        margin: 6rem auto;
         position: relative;
     }
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '/favicon.ico';
+	import favicon from '$lib/assets/favicon.ico';
 	import "../styles.css"
 
 	let { children } = $props();
