@@ -1,7 +1,3 @@
-<script lang="ts">
-
-</script>
-
 <main class="hero">
     <div class="hero-img">
         <div class="hero-content">
