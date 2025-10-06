@@ -1,0 +1,47 @@
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: #57633d;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    background-color: #86906d;
+    padding: 2rem;
+    border-radius: 1em;
+}
+
+a {
+    color: #971f12;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px){
+    main {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    main {
+        width: 70%;
+    }
+}
