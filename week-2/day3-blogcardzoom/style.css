@@ -7,25 +7,90 @@ main {
     position: relative;
 }
 
-#card-text {
-    /* background-image: url("assets/yots.webp"); */
-    background-color: white;
+#card {
+    position: relative;
+    width: 60%;
+    height: 75%;
     border: 1px solid white;
-    position: absolute;
-    left: 1.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-#card-text p, #card-text h1{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: url("assets/coffee_sip_car.png");
+#card-text {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 90%;
+    z-index: 99;
+}
+
+svg {
+    height: 100%;    
+	width: 100%;
+}
+
+svg text {
+    text-anchor: middle;
+}
+
+#alpha {
+    fill: white;
+    opacity: 0.9;
+    stroke:rgba(255,255,255,0.9);
+
+}
+
+
+.title {
+    font-size: 20px;
+    /* font-family: "Fascinate", system-ui; */
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+#base {
+    fill: rgb(0, 0, 0);
+    stroke:black;
+}
+
+/* Src on hover-zoom: https://w3bits.com/css-image-hover-zoom/ */
+#card-img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#card-img img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    transition: transform .5s ease;
+}
+
+#card:hover img {
+    transform: scale(1.25);
+}
+
+@media only screen and (max-width: 900px) {
+    #card {
+        width: 80%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #card {
+        width: 90%;
+        height: 95%;
+    }
+
+    #card-text {
+        width: 40%;
+    }
+
+    svg {
+        height: 100%;    
+    }
 }

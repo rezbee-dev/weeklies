@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Wk2D3</title>
 </head>
 <body>
     <main>
-        <section id="card-text">
-            <h1>eligendi officiis</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                A in unde eligendi officiis rerum neque, 
-                cum corrupti laborum.
-            </p>
+        <section id="card">
+            <article id="card-text">
+                <!-- src: https://codepen.io/daiquiri/pen/GWpPKP?editors=1100 -->
+                <svg viewBox="0 0 100 130" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <mask id="mask" x="0" y="0" width="100%" height="100%">
+                            <rect id="alpha" x="0" y="0" width="100%" height="100%" />
+                            <text class="title" dx="52%" dy="2.5em">GIRLS</text>
+                            <text class="title" dx="52%" dy="3.5em">LAST</text>
+                            <text class="title" dx="52%" dy="4.5em">TOUR</text>
+                        </mask>
+                    </defs>
+                    <rect id="base" x="0" y="0" width="100%" height="100%" mask="url(#mask)" />
+                </svg>
+            </article>
+            <div id="card-img" role="img">
+                <img src="assets/glt1.png" alt="Girls Last Tour">
+            </div>
         </section>
-        <div>
-            <!-- <img src="assets/yots.webp" alt="Yotsuba holding a gun"> -->
-            <img src="assets/coffee_sip_car.png" alt="Anime girl sipping coffee">
-        </div>
     </main>
 </body>
 </html>
