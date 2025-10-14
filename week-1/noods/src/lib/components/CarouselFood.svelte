@@ -68,7 +68,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 5;
+        z-index: 2;
         font-size: 1.5em;
         font-weight: bold;
         color: rgb(250,250,250);

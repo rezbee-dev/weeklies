@@ -31,6 +31,7 @@
 		font-weight: 400;
 		font-style: normal;
 		color: #fff;
+		z-index: 99;
 	}
 
 	.navbar ul {
@@ -40,7 +41,7 @@
 
 	.navbar ul li {
 		display: inline-block;
-		padding-right: 2.5em;
+		padding-right: 2em;
 	}
 /* 
 	.navbar ul li:nth-child(n+1) {

@@ -31,11 +31,11 @@
         width: 100%;
         height: 100%;
         background: rgba(71,71,71,.7);
-        z-index: 1;
+        z-index: 2;
     }
 
     .hero-content {
-        z-index: 2;
+        z-index: 3;
         position: relative;
         font-family: "Afacad", sans-serif;
         height: 100%;
