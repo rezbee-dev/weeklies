@@ -50,11 +50,12 @@
     nav {
         position: sticky;
         height: 72px;
-        width: 100vw;
+        width: 100%;
         top: 0;
         background-image: url("./brick.jpg");
         display: flex;
         justify-content: center;
+        z-index: 1000;
     }
 
     .navbar-mobile {

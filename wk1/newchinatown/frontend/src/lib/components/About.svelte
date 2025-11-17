@@ -23,21 +23,21 @@
             <div class="about__one__separator">
             </div>
         </div>
-        <div>
+        <div class="about__two">
             <p>
                 Menu contain all the classic and popular dishes and we only using high quality ingredients, and we can cook no M.S.G. 
                 Most requests can be satisfied and surely we welcome you comment and suggestions. 
                 We appreciate your business. And we have added deliver and online order for customer convenience.
             </p>
-            <h3>Open 6 Days a Week</h3>
+            <h3 class="pt-serif-bold">Open 6 Days a Week</h3>
             <p>Our store opens 6 days a week. Check contact / location to see the details.</p>
-            <h3>Order Your Foods Online</h3>
+            <h3 class="pt-serif-bold">Order Your Foods Online</h3>
             <p>For takeout, you can order your food online. The benefit is you have enough time to customize your order without errors in communication.</p>
         </div>
-        <div>
-            <h3>Scan & Order</h3>
-            <img src={qr} alt="QR Code">
-            <p>https://www.newchinatown.net/</p>
+        <div class="about__three" style="text-align: center;">
+            <h3 class="pt-serif-bold">Scan & Order</h3>
+            <img src={qr} alt="QR Code" style="max-width: 100%;">
+            <p class="pt-sans-bold">https://www.newchinatown.net/</p>
             <img src={logo2} alt="Logo">
         </div>
     </div>
@@ -46,7 +46,7 @@
 <style>
 
     .about-container {
-        width: 100vw;
+        width: 100%;
         background-image: url("./paper.png");
         padding: 6% 0;
     }
@@ -56,12 +56,15 @@
         gap: 1.5em;
         margin: 6rem;
         line-height: 20px;
+        width: 75%;
+        margin: auto;
     }
 
     .about__one {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 2em;
         align-items: center;
         font-size: 18px;
     }
@@ -81,6 +84,29 @@
         width: 133px;
         height: 5px;
         background: #ac0000;
-        margin: 30px auto;
+    }
+
+    .about__two {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .about__two p {
+        color: #333;
+    }
+
+    @media only screen and (max-width: 979px) {
+        .about {
+            flex-direction: column;
+            width: 95%;
+        }
+
+        .about__three {
+            margin: auto;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center; */
+        }
     }
 </style>
