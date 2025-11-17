@@ -3,7 +3,7 @@
     import logo from "$lib/assets/logo.png"
 
     let mobileNav = $state("")
-    
+
     /**
      * @type {HTMLSelectElement}
      */
@@ -34,7 +34,7 @@
             <img src={logo} alt="Website Logo">
         </div>
         <div>
-            <select bind:this={mobileDropdown} class="dropdown" name="nav" id="nav" value={mobileNav} onchange={onchangeDropDown}>
+            <select bind:this={mobileDropdown} class="dropdown" name="nav" id="nav" value={mobileNav ? mobileNav : "&nbsp;"} onchange={onchangeDropDown}>
                 <!-- <option value=""></option> -->
                 <option value="">Navigate to...</option>
                 <option value="/">&nbsp;Home</option>
