@@ -103,5 +103,10 @@
         .location__hours div {
             width: 50%;
         }
+
+        iframe {
+            width: 95%;
+            margin: auto;
+        }
     }
 </style>
