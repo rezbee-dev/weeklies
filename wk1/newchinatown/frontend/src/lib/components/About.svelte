@@ -44,7 +44,6 @@
 </div>
 
 <style>
-
     .about-container {
         width: 100%;
         background-image: url("./paper.png");
@@ -54,7 +53,6 @@
     .about {
         display: flex;
         gap: 1.5em;
-        margin: 6rem;
         line-height: 20px;
         width: 75%;
         margin: auto;
