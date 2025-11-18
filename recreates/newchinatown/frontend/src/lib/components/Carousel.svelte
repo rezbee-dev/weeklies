@@ -3,6 +3,8 @@
     import food from '$lib/assets/food.jpg'
 </script>
 
+<!-- Src: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels -->
+
 <div class="carousel" aria-label="Pictures of meals">
     <div class="carousel__img"><img src={bg} alt="restaurant pictures #1"></div>
     <div class="carousel__img"><img src={food} alt="restaurant pictures #2"></div>

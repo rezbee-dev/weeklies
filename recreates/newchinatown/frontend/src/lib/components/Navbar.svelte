@@ -15,6 +15,7 @@
     }
 </script>
 
+<!-- src: https://www.w3schools.com/css/css_dropdowns.asp -->
 <nav class="pt-sans-bold">
     <div class="navbar">
         <div class="navbar__group">

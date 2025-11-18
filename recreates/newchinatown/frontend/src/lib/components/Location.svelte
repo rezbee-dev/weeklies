@@ -109,4 +109,10 @@
             margin: auto;
         }
     }
+
+    @media only screen and (max-width: 500px) {
+        .location__hours div {
+            width: 80%;
+        }
+    }
 </style>
